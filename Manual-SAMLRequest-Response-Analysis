@@ -1,0 +1,22 @@
+# Manual SAML Request & Response Analysis 
+📌 What This Project Demonstrates
+This project walks through a full SAML 2.0 authentication flow, but instead of relying on a real application to generate SAML messages, you manually construct and send the SAMLRequest to Okta.
+This gives you deep, protocol‑level understanding of how SAML works — the kind of insight IAM engineers rely on when debugging enterprise SSO issues.
+
+You will:
+
+- Build a SAML AuthnRequest by hand
+
+- Encode it (Base64 + URL encoding)
+
+Send it to Okta’s SAML Identity Provider (IdP)
+
+Log in as the user
+
+Capture and decode the SAMLResponse
+
+Analyze the XML tags inside the SAML assertion
+
+Observe how trust, signatures, and attributes work
+
+This is the same process used when troubleshooting SAML integrations with Azure AD, Okta, ADFS, PingFederate, AWS IAM Identity Center, and more.
